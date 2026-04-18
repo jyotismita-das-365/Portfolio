@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+.section1 {
+  background-color: #d0e9ebd8;
+  height: 60px;
+  display: flex;
+  justify-content:space-around;
+  justify-items: center;
+  
+}
+
+#nav a {
+  text-decoration: none;
+  padding: 0;
+  font-size: 20px;
+  color: black;
+
+}
