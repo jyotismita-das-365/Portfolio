@@ -1,0 +1,25 @@
+.skills-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.skills-grid ul {
+  list-style: none;
+  margin-top: 8px;
+}
+
+.skills-grid li {
+  padding: 8px 10px;
+  border: 1px solid var(--line-color);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  background: color-mix(in srgb, var(--surface-color) 82%, transparent);
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,13 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills</title>
-  <link rel="stylesheet" href="../css/skills.css">
-</head>
-<body>
-  
-  <script src="../javascript/skills.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills | Jyotismita Das</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/skills.css" />
+  </head>
+  <body class="page-shell">
+    <header class="site-header">
+      <a href="./index.html" class="brand">
+        <span class="brand-dot"></span>
+        Jyotismita Das
+      </a>
+
+      <button
+        id="menu-toggle"
+        class="icon-btn"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="main-navbar"
+      >
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
+      <nav class="navbar" id="main-navbar">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./aboutme.html" class="nav-link">About</a>
+        <a href="./skills.html" class="nav-link active">Skills</a>
+        <a href="./projects.html" class="nav-link">Projects</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+          <span class="material-symbols-outlined">dark_mode</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="section-card">
+        <h1 class="section-title">
+          <span class="material-symbols-outlined">code</span>
+          Technical Skills
+        </h1>
+        <p>
+          A practical set of frontend, backend, database, and development tools
+          used to build complete web applications.
+        </p>
+      </section>
+
+      <section class="skills-grid">
+        <article class="section-card">
+          <h2 class="section-title">
+            <span class="material-symbols-outlined">web</span>
+            Frontend
+          </h2>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Responsive Design</li>
+          </ul>
+        </article>
+
+        <article class="section-card">
+          <h2 class="section-title">
+            <span class="material-symbols-outlined">dns</span>
+            Backend
+          </h2>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>REST APIs</li>
+            <li>Authentication Basics</li>
+            <li>CRUD Logic</li>
+          </ul>
+        </article>
+
+        <article class="section-card">
+          <h2 class="section-title">
+            <span class="material-symbols-outlined">database</span>
+            Database & Tools
+          </h2>
+          <ul>
+            <li>MongoDB</li>
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>Postman</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Copyright © <span id="year"></span> Jyotismita Das. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/theme.js"></script>
+  </body>
 </html>

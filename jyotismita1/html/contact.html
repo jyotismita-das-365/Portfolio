@@ -1,13 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact me</title>
-  <link rel="stylesheet" href="../css/contact.css">
-</head>
-<body>
-  
-  <script src="../javascript/contact.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Jyotismita Das</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+  <body class="page-shell">
+    <header class="site-header">
+      <a href="./index.html" class="brand">
+        <span class="brand-dot"></span>
+        Jyotismita Das
+      </a>
+
+      <button
+        id="menu-toggle"
+        class="icon-btn"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="main-navbar"
+      >
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
+      <nav class="navbar" id="main-navbar">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./aboutme.html" class="nav-link">About</a>
+        <a href="./skills.html" class="nav-link">Skills</a>
+        <a href="./projects.html" class="nav-link">Projects</a>
+        <a href="./contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+          <span class="material-symbols-outlined">dark_mode</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="contact-grid">
+        <article class="section-card contact-info">
+          <h1 class="section-title">
+            <span class="material-symbols-outlined">mail</span>
+            Contact Me
+          </h1>
+          <p>
+            Feel free to connect for internships, collaboration, or projects.
+          </p>
+          <p>
+            <span class="material-symbols-outlined">alternate_email</span>
+            jyotismita@example.com
+          </p>
+          <p>
+            <span class="material-symbols-outlined">language</span>
+            github.com/jyotismita
+          </p>
+          <p>
+            <span class="material-symbols-outlined">groups</span>
+            linkedin.com/in/jyotismita-das
+          </p>
+        </article>
+
+        <article class="section-card">
+          <h2 class="section-title">
+            <span class="material-symbols-outlined">send</span>
+            Send Message
+          </h2>
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Your email" />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Write your message"
+            ></textarea>
+
+            <button type="button" class="send-btn">Send</button>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Copyright © <span id="year"></span> Jyotismita Das. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/theme.js"></script>
+  </body>
 </html>

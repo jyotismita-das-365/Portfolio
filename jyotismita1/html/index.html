@@ -3,70 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="../css/index.css" />
+    <title>Home | Jyotismita Das</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
-  <body>
-    <section class="section1">
-      <div class="navbar">
-        <nav id="nav">
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#aboutme" class="nav-link">About</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </nav>
-        <button id="theme-toggle">
-          <span class="material-symbols-outlined"> wb_sunny </span>
+  <body class="page-shell">
+    <header class="site-header">
+      <a href="./index.html" class="brand">
+        <span class="brand-dot"></span>
+        Jyotismita Das
+      </a>
+
+      <button
+        id="menu-toggle"
+        class="icon-btn"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="main-navbar"
+      >
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
+      <nav class="navbar" id="main-navbar">
+        <a href="./index.html" class="nav-link active">Home</a>
+        <a href="./aboutme.html" class="nav-link">About</a>
+        <a href="./skills.html" class="nav-link">Skills</a>
+        <a href="./projects.html" class="nav-link">Projects</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+          <span class="material-symbols-outlined">dark_mode</span>
         </button>
       </div>
-    </section>
+    </header>
 
-    <section class="section2">
-      <div>
-        <h1>Hi! I am Jyotismita Das</h1>
-        <p>Full-Stack Developer</p>
-        <p>
-          Focused on building full-stack web applications using the MERN
-          (MongoDB, Express.js, React, Node.js) Stack, with experience in
-          developing responsive and scalable solutions.
-        </p>
-        <button>
-          <span class="material-symbols-outlined">download</span>Download Resume
-        </button>
-      </div>
-        
-      <div>
-        <img src="../assets/icon.jpeg" alt="Jyotismita Das" class="icon" />
-      </div>
-    </section>
+    <main class="page-main">
+      <section class="hero section-card">
+        <div>
+          <p class="hero-tag">
+            <span class="material-symbols-outlined">bolt</span>
+            Full Stack Developer
+          </p>
+          <h1>Hi, I am Jyotismita Das</h1>
+          <p>
+            I build responsive and scalable web applications using the MERN
+            stack. I enjoy turning ideas into clean, user-friendly products.
+          </p>
+          <div class="hero-actions">
+            <a href="./projects.html" class="cta-btn primary">View Projects</a>
+            <a href="./contact.html" class="cta-btn secondary">Contact Me</a>
+          </div>
+        </div>
 
-    <section class="section3">
-      <a href="../html/aboutme.html"></a>
-    </section>
+        <div class="hero-photo-wrap">
+          <img
+            src="../assets/icon.jpeg"
+            alt="Jyotismita Das"
+            class="hero-photo"
+          />
+        </div>
+      </section>
 
-    <section class="section4">
-      <a href="../html/skills.html"></a>
-    </section>
+      <section class="quick-grid">
+        <article class="quick-card section-card">
+          <h2 class="section-title">
+            <span class="material-symbols-outlined">person</span>
+            About
+          </h2>
+          <p>
+            Learn about my background, focus areas, and development journey.
+          </p>
+          <a href="./aboutme.html" class="inline-link">Read more</a>
+        </article>
 
-    <section class="section4">
-      <a href="../html/projects.html"></a>
-    </section>
+        <article class="quick-card section-card">
+          <h2 class="section-title">
+            <span class="material-symbols-outlined">code</span>
+            Skills
+          </h2>
+          <p>See the frontend, backend, database, and tools I use most.</p>
+          <a href="./skills.html" class="inline-link">See skills</a>
+        </article>
 
-    <section class="section5">
-      <a href="../html/contact.html"></a>
-    </section>
+        <article class="quick-card section-card">
+          <h2 class="section-title">
+            <span class="material-symbols-outlined">work</span>
+            Projects
+          </h2>
+          <p>View selected projects that show practical UI and backend work.</p>
+          <a href="./projects.html" class="inline-link">View projects</a>
+        </article>
+      </section>
 
-    <section class="section6">
-      <footer>
-        <p>© <span id="year"></span> Jyotismita Das. All rights reserved.</p>
-      </footer>
-    </section>
+      <section class="section-card feature-section">
+        <h2 class="section-title">
+          <span class="material-symbols-outlined">code</span>
+          Skills Snapshot
+        </h2>
+        <div class="chip-group">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express.js</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Git & GitHub</span>
+        </div>
+      </section>
+
+      <section class="section-card feature-section">
+        <h2 class="section-title">
+          <span class="material-symbols-outlined">work</span>
+          Featured Projects
+        </h2>
+        <div class="project-grid home-project-grid">
+          <article class="project-card">
+            <h3>College Portal Platform</h3>
+            <p>
+              A college website with authentication, CRUD operations, and a
+              clean admin-style flow.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Responsive Portfolio Website</h3>
+            <p>
+              A personal portfolio built with mobile-first layouts, icons, and a
+              dark mode interface.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Task Manager API</h3>
+            <p>
+              A backend API for task creation, updates, and secure data
+              handling.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Copyright © <span id="year"></span> Jyotismita Das. All rights reserved.
+      </p>
+    </footer>
 
     <script src="../javascript/index.js"></script>
     <script src="../javascript/theme.js"></script>

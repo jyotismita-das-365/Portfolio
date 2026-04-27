@@ -1,9 +1,19 @@
 :root {
-  --bg-color: #e6eeeff3;
-  --text-color: #1A1A1A;
+  --bg-color: #edf4f8;
+  --text-color: #1a1a1a;
+  --surface-color: #ffffff;
+  --card-bg: #ffffff;
+  --line-color: rgba(17, 24, 39, 0.12);
+  --accent-color: #1d8a8a;
+  --accent-strong: #0f5f63;
 }
 
 .dark-mode {
-  --bg-color: #000b0cd8;
-  --text-color: #E2E8F0;
+  --bg-color: #0d131b;
+  --text-color: #e2e8f0;
+  --surface-color: #111b25;
+  --card-bg: #121f2c;
+  --line-color: rgba(226, 232, 240, 0.18);
+  --accent-color: #38b2ac;
+  --accent-strong: #79d5d0;
 }
