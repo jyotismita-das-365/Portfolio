@@ -56,3 +56,31 @@ if (menuToggle && navbar) {
 
   setMenuState(false);
 }
+
+const clickableProjectCards = document.querySelectorAll(
+  ".project-card[data-href]",
+);
+
+clickableProjectCards.forEach((card) => {
+  card.setAttribute("role", "link");
+  card.setAttribute("tabindex", "0");
+
+  const navigateFromCard = () => {
+    const target = card.getAttribute("data-href");
+    if (target) {
+      window.location.href = target;
+    }
+  };
+
+  card.addEventListener("click", (event) => {
+    if (event.target.closest("a, button")) return;
+    navigateFromCard();
+  });
+
+  card.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      navigateFromCard();
+    }
+  });
+});

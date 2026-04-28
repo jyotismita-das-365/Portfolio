@@ -35,13 +35,16 @@
         <a href="./skills.html" class="nav-link">Skills</a>
         <a href="./projects.html" class="nav-link active">Projects</a>
         <a href="./contact.html" class="nav-link">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+        <button
+          type="button"
+          class="nav-link nav-theme-toggle"
+          data-theme-toggle
+          aria-label="Switch theme"
+        >
           <span class="material-symbols-outlined">dark_mode</span>
+          <span>Theme</span>
         </button>
-      </div>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -57,7 +60,10 @@
       </section>
 
       <section class="project-grid">
-        <article class="project-card section-card">
+        <article
+          class="project-card section-card"
+          data-href="./project-college.html"
+        >
           <h2>College Portal Platform</h2>
           <p>
             Built a college portal with authentication, admin-style workflow,
@@ -67,9 +73,15 @@
             <span>React</span><span>Node.js</span><span>MongoDB</span
             ><span>Express</span>
           </div>
+          <a href="./project-college.html" class="project-link"
+            >Read full project</a
+          >
         </article>
 
-        <article class="project-card section-card">
+        <article
+          class="project-card section-card"
+          data-href="./project-portfolio.html"
+        >
           <h2>Responsive Portfolio Website</h2>
           <p>
             Designed and developed a modern personal portfolio with responsive
@@ -79,9 +91,15 @@
             <span>HTML</span><span>CSS</span><span>JavaScript</span
             ><span>UI Design</span>
           </div>
+          <a href="./project-portfolio.html" class="project-link"
+            >Read full project</a
+          >
         </article>
 
-        <article class="project-card section-card">
+        <article
+          class="project-card section-card"
+          data-href="./project-task-api.html"
+        >
           <h2>Task Manager API</h2>
           <p>
             Implemented backend APIs for task creation, status updates, and
@@ -91,6 +109,9 @@
             <span>Express</span><span>JWT</span><span>MongoDB</span
             ><span>REST API</span>
           </div>
+          <a href="./project-task-api.html" class="project-link"
+            >Read full project</a
+          >
         </article>
       </section>
     </main>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Jyotismita Das</title>
-    
+
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -36,13 +36,16 @@
         <a href="./skills.html" class="nav-link">Skills</a>
         <a href="./projects.html" class="nav-link">Projects</a>
         <a href="./contact.html" class="nav-link">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+        <button
+          type="button"
+          class="nav-link nav-theme-toggle"
+          data-theme-toggle
+          aria-label="Switch theme"
+        >
           <span class="material-symbols-outlined">dark_mode</span>
+          <span>Theme</span>
         </button>
-      </div>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -58,8 +61,16 @@
             stack. I enjoy turning ideas into clean, user-friendly products.
           </p>
           <div class="hero-actions">
-            <a href="./projects.html" class="cta-btn primary">View Projects</a>
-            <a href="./contact.html" class="cta-btn secondary">Contact Me</a>
+            <a
+              href="../assets/resume.pdf"
+              class="cta-btn primary resume-download"
+              download
+              aria-label="Download resume"
+              title="Download resume"
+            >
+              <span>Resume</span>
+              <span class="material-symbols-outlined">download</span>
+            </a>
           </div>
         </div>
 
@@ -108,6 +119,11 @@
           <span class="material-symbols-outlined">code</span>
           Skills Snapshot
         </h2>
+        <p class="section-lead">
+          I enjoy building complete products from interface to API. My focus is
+          writing clean code, creating responsive layouts, and building features
+          that solve real user problems.
+        </p>
         <div class="chip-group">
           <span class="chip">HTML</span>
           <span class="chip">CSS</span>
@@ -125,33 +141,47 @@
           <span class="material-symbols-outlined">work</span>
           Featured Projects
         </h2>
+        <p class="section-lead">
+          Click a project to open a complete case-study style page with
+          description, features, process details, and scroll-based visual
+          effects.
+        </p>
         <div class="project-grid home-project-grid">
-          <article class="project-card">
+          <article class="project-card" data-href="./project-college.html">
             <h3>College Portal Platform</h3>
             <p>
               A college website with authentication, CRUD operations, and a
               clean admin-style flow.
             </p>
+            <a href="./project-college.html" class="inline-link"
+              >Open details</a
+            >
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-href="./project-portfolio.html">
             <h3>Responsive Portfolio Website</h3>
             <p>
               A personal portfolio built with mobile-first layouts, icons, and a
               dark mode interface.
             </p>
+            <a href="./project-portfolio.html" class="inline-link"
+              >Open details</a
+            >
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-href="./project-task-api.html">
             <h3>Task Manager API</h3>
             <p>
               A backend API for task creation, updates, and secure data
               handling.
             </p>
+            <a href="./project-task-api.html" class="inline-link"
+              >Open details</a
+            >
           </article>
         </div>
       </section>
-    </main>
+
 
     <footer class="site-footer">
       <p>

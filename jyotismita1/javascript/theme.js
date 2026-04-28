@@ -1,11 +1,23 @@
-const toggleBtn = document.getElementById("theme-toggle");
-const themeIcon = toggleBtn?.querySelector(".material-symbols-outlined");
+const toggleButtons = [
+  ...document.querySelectorAll("#theme-toggle, [data-theme-toggle]"),
+];
 
 const syncThemeIcon = () => {
-  if (!themeIcon) return;
-  themeIcon.textContent = document.body.classList.contains("dark-mode")
-    ? "light_mode"
-    : "dark_mode";
+  const isDark = document.body.classList.contains("dark-mode");
+  toggleButtons.forEach((button) => {
+    button.setAttribute(
+      "aria-label",
+      isDark ? "Switch to light mode" : "Switch to dark mode",
+    );
+    button.setAttribute(
+      "title",
+      isDark ? "Switch to light mode" : "Switch to dark mode",
+    );
+    const icon = button.querySelector(".material-symbols-outlined");
+    if (icon) {
+      icon.textContent = isDark ? "light_mode" : "dark_mode";
+    }
+  });
 };
 
 if (localStorage.getItem("theme") === "dark") {
@@ -14,8 +26,8 @@ if (localStorage.getItem("theme") === "dark") {
 
 syncThemeIcon();
 
-if (toggleBtn) {
-  toggleBtn.addEventListener("click", () => {
+toggleButtons.forEach((button) => {
+  button.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
     localStorage.setItem(
       "theme",
@@ -23,4 +35,4 @@ if (toggleBtn) {
     );
     syncThemeIcon();
   });
-}
+});

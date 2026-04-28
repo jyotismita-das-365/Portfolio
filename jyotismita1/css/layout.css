@@ -80,6 +80,20 @@ body {
   color: var(--accent-strong);
 }
 
+.nav-theme-toggle {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+  background: color-mix(in srgb, var(--accent-color) 10%, transparent);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-theme-toggle .material-symbols-outlined {
+  font-size: 1.1rem;
+}
+
 .header-actions {
   display: flex;
   align-items: center;
@@ -164,6 +178,10 @@ body {
 }
 
 @media (max-width: 900px) {
+  .header-actions {
+    display: none;
+  }
+
   #menu-toggle {
     display: grid;
   }

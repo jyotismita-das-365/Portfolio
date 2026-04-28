@@ -10,6 +10,18 @@
   font-size: 1.25rem;
 }
 
+.project-card {
+  cursor: pointer;
+  transition:
+    transform 0.24s ease,
+    box-shadow 0.24s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 26px color-mix(in srgb, #000 12%, transparent);
+}
+
 .stack-list {
   margin-top: 12px;
   display: flex;
@@ -23,6 +35,16 @@
   padding: 5px 10px;
   font-size: 0.86rem;
   background: color-mix(in srgb, var(--accent-color) 12%, transparent);
+}
+
+.project-link {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--accent-strong);
 }
 
 @media (max-width: 960px) {

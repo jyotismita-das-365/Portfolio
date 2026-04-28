@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Portal Platform | Jyotismita Das</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/project-detail.css" />
+  </head>
+  <body class="page-shell">
+    <header class="site-header">
+      <a href="./index.html" class="brand">
+        <span class="brand-dot"></span>
+        Jyotismita Das
+      </a>
+
+      <button
+        id="menu-toggle"
+        class="icon-btn"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="main-navbar"
+      >
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
+      <nav class="navbar" id="main-navbar">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./aboutme.html" class="nav-link">About</a>
+        <a href="./skills.html" class="nav-link">Skills</a>
+        <a href="./projects.html" class="nav-link active">Projects</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+        <button
+          type="button"
+          class="nav-link nav-theme-toggle"
+          data-theme-toggle
+          aria-label="Switch theme"
+        >
+          <span class="material-symbols-outlined">dark_mode</span>
+          <span>Theme</span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="page-main detail-main">
+      <section class="section-card project-hero reveal">
+        <h1>College Portal Platform</h1>
+        <p class="project-subtitle">
+          A full-stack web platform designed to simplify academic workflows,
+          event notices, and student data management with secure access and
+          role-based user experiences.
+        </p>
+        <div class="project-meta">
+          <span class="meta-chip">React</span>
+          <span class="meta-chip">Node.js</span>
+          <span class="meta-chip">Express</span>
+          <span class="meta-chip">MongoDB</span>
+          <span class="meta-chip">JWT Auth</span>
+        </div>
+      </section>
+
+      <section class="section-card section-block reveal">
+        <h2 class="section-title">
+          <span class="material-symbols-outlined">description</span>
+          Project Overview
+        </h2>
+        <div class="overview-grid">
+          <article class="info-card">
+            <h3>Problem</h3>
+            <p>
+              Academic information was scattered across different channels,
+              making it difficult for students and administrators to track
+              notices, records, and updates.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Solution</h3>
+            <p>
+              Created a centralized portal with login, dashboard views, and CRUD
+              modules for profiles, announcements, and event management.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card section-block reveal">
+        <h2 class="section-title">
+          <span class="material-symbols-outlined">star</span>
+          Key Features
+        </h2>
+        <ul class="feature-list">
+          <li>Secure signup/login flow with JWT-based authentication.</li>
+          <li>Role-based dashboard for students and administrators.</li>
+          <li>CRUD operations for notices, events, and academic records.</li>
+          <li>Search and filter support for faster record lookup.</li>
+          <li>Responsive UI for mobile and desktop users.</li>
+        </ul>
+      </section>
+
+      <section class="section-card section-block reveal">
+        <h2 class="section-title">
+          <span class="material-symbols-outlined">photo_library</span>
+          Scroll Story Visuals
+        </h2>
+        <div class="photo-story">
+          <figure class="photo-panel reveal">
+            <img
+              src="../assets/icon.jpeg"
+              alt="College portal landing view"
+              class="parallax-photo"
+            />
+            <figcaption class="photo-caption">
+              Landing experience with clear navigation and module shortcuts.
+            </figcaption>
+          </figure>
+          <figure class="photo-panel reveal">
+            <img
+              src="../assets/icon.jpeg"
+              alt="College portal dashboard"
+              class="parallax-photo"
+            />
+            <figcaption class="photo-caption">
+              Dashboard section focused on quick notice and event access.
+            </figcaption>
+          </figure>
+          <figure class="photo-panel reveal">
+            <img
+              src="../assets/icon.jpeg"
+              alt="College portal management section"
+              class="parallax-photo"
+            />
+            <figcaption class="photo-caption">
+              Management view for updating student and event data.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-card section-block reveal">
+        <h2 class="section-title">
+          <span class="material-symbols-outlined">schedule</span>
+          Build Timeline
+        </h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h4>Phase 1: Planning and Data Model</h4>
+            <p>Defined user roles, routes, and MongoDB schema structure.</p>
+          </article>
+          <article class="timeline-item">
+            <h4>Phase 2: Core Backend</h4>
+            <p>Implemented APIs, authentication, and access controls.</p>
+          </article>
+          <article class="timeline-item">
+            <h4>Phase 3: Frontend and Testing</h4>
+            <p>
+              Built responsive UI components and validated end-to-end flows.
+            </p>
+          </article>
+        </div>
+        <div class="project-nav">
+          <a href="./projects.html">Back to Projects</a>
+          <a href="./project-portfolio.html">Next Project</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Copyright © <span id="year"></span> Jyotismita Das. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/theme.js"></script>
+    <script src="../javascript/project-detail.js"></script>
+  </body>
+</html>

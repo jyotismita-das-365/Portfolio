@@ -35,13 +35,16 @@
         <a href="./skills.html" class="nav-link active">Skills</a>
         <a href="./projects.html" class="nav-link">Projects</a>
         <a href="./contact.html" class="nav-link">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+        <button
+          type="button"
+          class="nav-link nav-theme-toggle"
+          data-theme-toggle
+          aria-label="Switch theme"
+        >
           <span class="material-symbols-outlined">dark_mode</span>
+          <span>Theme</span>
         </button>
-      </div>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -51,7 +54,22 @@
           Technical Skills
         </h1>
 
-        <p>Skilled in full-stack web development using modern JavaScript technologies and tools.</p>
+        <p>
+          Skilled in full-stack web development using modern JavaScript
+          technologies and tools.
+        </p>
+
+        <div class="skills-photo-panel" aria-label="Technology image collage">
+          <img src="../assets/techPic/html.jpg" alt="HTML" />
+          <img src="../assets/techPic/js.webp" alt="JavaScript" />
+          <img src="../assets/techPic/react.png" alt="React" />
+          <img src="../assets/techPic/nodejs.png" alt="Node.js" />
+          <img src="../assets/techPic/express.png" alt="Express.js" />
+          <img src="../assets/techPic/mongodb.webp" alt="MongoDB" />
+          <img src="../assets/techPic/tailwindcss.png" alt="Tailwind CSS" />
+          <img src="../assets/techPic/github.png" alt="GitHub" />
+          <img src="../assets/techPic/images.jpeg" alt="Technology workspace" />
+        </div>
       </section>
 
       <section class="skills-grid">
