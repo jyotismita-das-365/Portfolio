@@ -1,9 +1,9 @@
 const Skills = () => {
   return (
     <>
-    <h1>Hello</h1>
+    <h1>Skills Section</h1>
     </>
   )
 }
 
-export default Skills;
+export default Skills

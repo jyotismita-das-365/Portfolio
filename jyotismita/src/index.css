@@ -1,3 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+*{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(192, 255, 243);
+  font-family: 'Inter', sans-serif;
+}

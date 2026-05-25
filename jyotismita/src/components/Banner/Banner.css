@@ -1,0 +1,31 @@
+.banner{
+  text-align: center;
+  word-spacing: 4px;
+  letter-spacing: 2px;
+  padding: 30px;
+  line-height: 30px;
+}
+
+.banner button {
+  margin-top: 20px;
+  height: 40px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 9px;
+  box-shadow: 5px 5px 30px black;
+}
