@@ -1,5 +1,6 @@
-import Profile from "../../assets/profile.png";
+import Profile from "../../../assets/profile.png";
 import "./Banner.css";
+import Resume from "../Resume/Resume"
 
 const Banner = () => {
   return (
