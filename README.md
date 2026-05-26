@@ -9,3 +9,11 @@
   --bg-color: #000b0cd8;
   --text-color: #E2E8F0;
 } -->
+
+<!-- body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+} -->
