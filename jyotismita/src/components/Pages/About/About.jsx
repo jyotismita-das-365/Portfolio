@@ -2,9 +2,9 @@ import "./About.css";
 const About = () => {
   return (
     <>
-      <div className="about-sec">
+      <div className="about">
         <p>
-          passionate Full-Stack (MERN) , currently pursuing B.Tech
+          Passionate Full-Stack (MERN) , currently pursuing B.Tech
           in Computer Science. I enjoy building responsive and modern web
           applications using React, JavaScript, MongoDB, Express, and Node.js.
         </p>

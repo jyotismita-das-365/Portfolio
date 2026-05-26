@@ -1,6 +1,7 @@
 import Profile from "../../../assets/profile.png";
 import "./Banner.css";
 import Resume from "../Resume/Resume"
+import {Link} from "react-router-dom"
 
 const Banner = () => {
   return (
@@ -16,7 +17,9 @@ const Banner = () => {
             Crafting scalable and interactive web applications using MERN
             technologies.
           </p>
+          <Link to="/resume">
           <button>Resume</button>
+          </Link>
         </div>
       </div>
     </>

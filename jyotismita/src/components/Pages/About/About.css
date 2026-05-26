@@ -1,5 +1,15 @@
-.about-sec {
-  font-size: large;
-  word-spacing: 4px;
-  line-height: 30px;
+.about {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.about p{
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  padding: 40px;
+  border: 3px solid black;
+  border-radius: 20px;
+  color: White;
+  background-color: rgb(2, 126, 102);
 }
