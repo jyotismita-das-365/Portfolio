@@ -1,16 +1,14 @@
 .navbar{
-  background-color: rgb(2, 126, 102);
+  background-color: rgb(53, 77, 216);
   display: flex;
   justify-content: space-evenly;
   justify-items: center;
   gap: 40px;
   padding: 20px;
-  margin-left: 30px;
   margin-top: 10px;
   z-index: 1000;
   cursor: pointer;
   border: 2px solid rgb(4, 67, 69);
-  border-radius: 20px 0px 0px 20px;
   position: sticky;
   top: 10px;
 }
@@ -19,7 +17,7 @@
   color: white;
   font-weight: semi-bold;
   font-size: larger;
-  background-color: rgb(2, 126, 102);
+  background-color: rgb(53, 77, 216);
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   text-shadow: 5px 5px 5px rgb(1, 4, 4);
@@ -34,4 +32,12 @@
   color: black;
   text-shadow: none;
   box-shadow: 3px 3px 5px black;
+}
+
+.theme-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
 }

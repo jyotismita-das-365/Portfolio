@@ -1,8 +1,14 @@
 import "./About.css";
+import { useTheme } from "../../../context/ThemeContext";
 const About = () => {
+
+  const { theme } = useTheme();
+
   return (
     <>
-      <div className="about">
+      <div className={
+        theme === "dark" ? "about dark-about" : "about light-about"
+      }>
         <p>
           Passionate Full-Stack (MERN) , currently pursuing B.Tech
           in Computer Science. I enjoy building responsive and modern web

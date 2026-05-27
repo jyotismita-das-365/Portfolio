@@ -1,6 +1,17 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: rgb(192, 255, 243);
   font-family: 'Inter', sans-serif;
+}
+
+/* Light theme */
+body.light{
+  background-color: white;
+  color: black;
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
 }
