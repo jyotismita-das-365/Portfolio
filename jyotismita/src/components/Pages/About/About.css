@@ -14,10 +14,10 @@
 
 .light-about p{
   color: black;
-  background-color: rgb(235, 240, 245);
+  background-color: var(--secondary-color);
 }
 
 .dark-about p{
-  color: rgb(235, 240, 245);
-  background-color: black;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
 }

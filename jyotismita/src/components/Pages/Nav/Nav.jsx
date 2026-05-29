@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './Nav.css'
 import { useTheme } from "../../../context/ThemeContext"
+import { Moon, Sun } from 'lucide-react';
 const Nav = () => {
 
   const { theme, toggleTheme } = useTheme();
@@ -17,7 +18,7 @@ const Nav = () => {
         <NavLink to="/skills" className={activeItem}>Skills</NavLink>
         <NavLink to="/contact" className={activeItem}>Contact</NavLink>
 
-        <button onClick = {toggleTheme} className='theme-btn'>{theme === "light" ? "dark" : "light"}</button>
+        <button onClick = {toggleTheme} className='theme-btn'>{theme === "light" ? <Sun /> : <Moon />}</button>
       </nav>
   );
 };

@@ -1,5 +1,5 @@
 .navbar{
-  background-color: rgb(53, 77, 216);
+  background-color: var(--primary-color);
   display: flex;
   justify-content: space-evenly;
   justify-items: center;
@@ -14,30 +14,18 @@
 }
 
 .nav-link {
-  color: white;
+  color: black;
   font-weight: semi-bold;
   font-size: larger;
-  background-color: rgb(53, 77, 216);
+  background-color: var(--primary-color);
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  text-shadow: 5px 5px 5px rgb(1, 4, 4);
+  text-shadow: 2px 2px 5px white;
 }
 
 .active-link {
-  color: rgb(221, 221, 28);
-  border: 2px solid rgb(4, 67, 69);
-  border-radius: 5px;
-  background-color: white;
-  padding: 2px 15px 2px 15px;
-  color: black;
-  text-shadow: none;
-  box-shadow: 3px 3px 5px black;
+  color: #f8fafc;
 }
 
 .theme-btn {
-  padding: 10px 18px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 15px;
 }
