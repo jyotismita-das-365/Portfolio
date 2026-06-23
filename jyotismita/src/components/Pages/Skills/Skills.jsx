@@ -1,7 +1,7 @@
 const Skills = () => {
   return (
     <>
-    <h1>Skills Section</h1>
+    <p>Education is the way to take knowle</p>
     </>
   )
 }

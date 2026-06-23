@@ -8,15 +8,13 @@
 
 /* global css */
 :root {
-  --primary-color: #2563eb;
-  --secondary-color: #7c3aed;
+  --primary-color: #fcfdff;
   --text-color: #111827;
-  --bg-color: #fbf9fb;
+  --bg-color: #e0e1f9;
 }
 
 .dark {
-  --primary-color: #60a5fa;
-  --secondary-color: #a78bfa;
+  --primary-color: #04112f;
   --text-color: #f8fafc;
-  --bg-color: #0f172a;
+  --bg-color: #1c2021;
 }

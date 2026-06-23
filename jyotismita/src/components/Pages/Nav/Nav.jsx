@@ -11,7 +11,9 @@ const Nav = () => {
   }
   
   return (
-      <nav className='navbar'>
+      <nav className={
+        theme === "dark" ? "navbar dark-navbar dark-nav-link" : "navbar light-navbar"
+      }>
         <NavLink to="/" className={activeItem}>Home</NavLink>
         <NavLink to="/about" className={activeItem}>About</NavLink>
         <NavLink to="/projects" className={activeItem}>Projects</NavLink>
