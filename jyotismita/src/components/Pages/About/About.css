@@ -1,20 +1,15 @@
 .about {
-  min-height: 100vh;
-  padding: 40px;
+  padding: 10px;
+  padding-top: 20px;
 }
 
 .about p{
   font-size: 18px;
   line-height: 1.8;
-  margin-bottom: 30px;
-  padding: 40px;
-  border: 3px solid black;
-  border-radius: 20px;
 }
 
 .light-about p{
   color: black;
-  background-color: var(--primary-color);
 }
 
 .dark-about p{

@@ -2,6 +2,7 @@ import "./Projects.css";
 import Project1 from "../../../assets/project1.png";
 
 const Projects = () => {
+  const btnitem = ["ReadMore", "Code"];
   return (
     <>
       <div className="project-container">
@@ -16,8 +17,8 @@ const Projects = () => {
           </p>
 
           <div className="project-buttons">
-            <button>Live Demo</button>
-            <button>GitHub</button>
+            <button>{btnitem[0]}</button>
+            <button>{btnitem[1]}</button>
           </div>
         </div>
         <div className="project-card">
@@ -31,8 +32,8 @@ const Projects = () => {
           </p>
 
           <div className="project-buttons">
-            <button>Live Demo</button>
-            <button>GitHub</button>
+            <button>{btnitem[0]}</button>
+            <button>{btnitem[1]}</button>
           </div>
         </div>
         <div className="project-card">
@@ -46,8 +47,8 @@ const Projects = () => {
           </p>
 
           <div className="project-buttons">
-            <button>Live Demo</button>
-            <button>GitHub</button>
+            <button>{btnitem[0]}</button>
+            <button>{btnitem[1]}</button>
           </div>
         </div>
       </div>
