@@ -6,7 +6,7 @@ const Banner = () => {
     <>
       <div className='banner'>
         <div className='img-container'>
-          <img src={Profile} alt="Jyotismita Das" className="profile-img"/>
+          <img src={Profile} alt="Jyotismita Das" className="profile-img" />
         </div>
         <div>
           <h1>Hi! I'm Jyotismita Das</h1>

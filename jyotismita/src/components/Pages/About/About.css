@@ -3,16 +3,16 @@
   padding-top: 20px;
 }
 
-.about p{
+.about p {
   font-size: 18px;
   line-height: 1.8;
 }
 
-.light-about p{
+.light-about p {
   color: black;
 }
 
-.dark-about p{
+.dark-about p {
   color: var(--text-color);
   background-color: var(--primary-color);
 }

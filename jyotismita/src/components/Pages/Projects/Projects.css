@@ -1,4 +1,4 @@
-.project-container{
+.project-container {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
@@ -9,48 +9,48 @@
   gap: 40px;
 }
 
-.project-card{
+.project-card {
   background: #1e293b;
   border-radius: 20px;
   overflow: hidden;
   transition: 0.4s;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.project-card img{
+.project-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.project-card h2{
+.project-card h2 {
   font-size: 30px;
   padding: 20px 20px 10px;
 }
 
-.project-card p{
+.project-card p {
   padding: 0 20px 20px;
   color: black;
 }
 
-.project-buttons{
+.project-buttons {
   display: flex;
   gap: 15px;
   padding: 0 20px 20px;
 }
 
-.project-buttons button{
+.project-buttons button {
   padding: 10px 20px;
   border-radius: 10px;
   background: rgb(2, 126, 102);
   color: white;
   cursor: pointer;
   transition: 0.3s;
-  border: 3px solid rgb(3, 64, 52) ;
+  border: 3px solid rgb(3, 64, 52);
   font-size: 18px;
   font-weight: bold;
 }
 
-.project-buttons button:hover{
+.project-buttons button:hover {
   transform: scale(1.05);
 }

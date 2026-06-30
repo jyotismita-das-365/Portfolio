@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-evenly;
@@ -23,9 +23,7 @@
   padding-inline: 16px;
 }
 
-.dark-nav-link {
-  
-}
+.dark-nav-link {}
 
 .active-link {
   background-color: rgba(0, 102, 187, 0.4);
@@ -34,13 +32,32 @@
   border-radius: 50px;
 }
 
-.dark-navbar{
-  
-}
+.dark-navbar {}
 
-.theme-btn{
+.theme-btn {
   width: 80px;
   height: 40px;
   border: none;
   background-color: var(--primary-color);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    /* Show menu icon*/
+  }
+
+  .nav-link {
+    display: none;
+    /*Hide navigation link*/
+  }
 }

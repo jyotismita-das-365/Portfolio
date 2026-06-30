@@ -1,7 +1,7 @@
 const Certificate = () => {
-  return(
+  return (
     <>
-    <h1>Hello</h1>
+      <h1>Hello</h1>
     </>
   )
 }
