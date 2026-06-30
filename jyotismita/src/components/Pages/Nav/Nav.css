@@ -23,16 +23,12 @@
   padding-inline: 16px;
 }
 
-.dark-nav-link {}
-
 .active-link {
   background-color: rgba(0, 102, 187, 0.4);
   padding: 6px;
   padding-inline: 16px;
   border-radius: 50px;
 }
-
-.dark-navbar {}
 
 .theme-btn {
   width: 80px;
